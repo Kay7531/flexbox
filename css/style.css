@@ -1,0 +1,250 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  /* The Universal Selector */
+  *, /* All elements*/
+  *::before, /* All ::before pseudo-elements */
+  *::after { /* All ::after pseudo-elements */
+    /* height & width will now include border & padding by default
+       but can be over-ridden as needed */
+    box-sizing: inherit;
+  }
+body{
+    background-color: white;
+    color: #191919;
+    font-family: "acumin-pro","Acumin Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:0px;
+    border-bottom:1px solid gray;
+    height: 60px;
+
+}
+#destinations{
+    display: flex;
+    margin-right: auto; 
+
+}
+#destinations > p{
+    display: flex;
+    align-items: center;
+    padding: 10px ;
+    padding-top: 0px;
+}
+
+
+#actions{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+#actions > button{
+ display: flex;
+ align-items: center;
+ padding: 8px 18px;
+ border-radius: 20px;
+ font-weight: 500;
+ height: 30px;
+}
+
+
+ #log-in{
+    background-color: rgba(228,241,254,0.3);
+    color: blue;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+
+#sign{
+    background-color: blue;
+    color:white;
+    border:none;
+}
+
+
+#trial{
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.3);
+
+}
+
+#logo{
+    font-family:'Abril Fatface', cursive;
+    font-size: 150%;
+}
+/*.....................................................*/
+
+.search{
+    display: flex;
+    justify-content:center;
+    position:relative;
+    padding: 24px 24px 21px 24px;
+
+}
+.search > input{
+    display: flex;
+    padding-left: 20px;
+    width:800px;
+    font-size: 15px;
+    border-top-left-radius: 20px ;
+    border-bottom-left-radius:20px ;
+    border: 1px solid rgba(0,0,0,0.3);;
+
+
+    
+}
+#tasks{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    padding: 10px 20px;
+    gap: 10px;
+    font-weight: 600; 
+    border: 1px solid rgba(0,0,0,0.3);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+
+#tasks > button{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    padding: 6px 13px 6px 12px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+
+#tasks > button:hover{
+    background-color: rgba(228,241,254);
+}
+
+
+#tasks> #black{
+    background-color: black;
+    color: white;
+}
+/*..........................................................*/
+main{
+    padding: 32px 72px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  } 
+
+.img-placeholder{
+    width: 300px;
+    height: 270px;
+    background-color: gray;
+    border-radius: 8px;
+  }
+
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.card-footer > *{
+    margin: 8px 0 0;
+}
+
+/*.........................................................*/
+
+footer{
+    display: flex;
+    justify-content: center;
+ 
+
+
+}
+.more-actions{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+.more-actions > #mail{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    height:40px;
+    
+}
+#mail > a{
+    display: flex;
+    text-align: center;
+    padding: 0px 5px;
+}
+.more-actions >#socials{
+    display: flex;
+    justify-content: center
+    position: relative;
+    padding: 0px 40px 100px 20px;
+}
+#socials > button {
+    background-color: blue;
+    color: white;
+    border-radius:20px;
+    height: 30px;
+    margin-right: 10px;
+    padding:10px 10px 25px 10px;
+}
+#socials > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20px;
+    padding: 20px;
+    margin: 0px 5px 0px 5px ;
+}
+
+
+
+
+
+
+
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 100%;
+  }
